@@ -2,9 +2,9 @@ import datetime
 
 
 def dow(date_input_1):
-    
     date = datetime.datetime.strptime(date_input_1, '%d.%m.%Y')
     exec(f'date = datetime.date({date.year}, {date.month}, {date.day})')
+    
     if date.weekday() == 0:
         day = 'Понедельник'
     elif date.weekday() == 1:
